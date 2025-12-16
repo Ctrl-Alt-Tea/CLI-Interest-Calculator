@@ -47,8 +47,8 @@ Total Interest Earned: R7656.35
 Final Value of Investment: R27656.35
 ```
 
-## 🛠️ Future Improvements
-- Add a GUI using Tkinter or WPF
+## 🛠️ Future Ideas
+- Add a GUI
 - Export results to CSV or PDF
 - Add support for different compounding frequencies (quarterly, daily)
 
