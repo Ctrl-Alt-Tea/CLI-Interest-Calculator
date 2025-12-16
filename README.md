@@ -28,7 +28,7 @@ A simple Python script that helps users calculate **simple** or **compound inter
 
 ### Run the Script in your terminal
 ```bash
-python interest_calculator.py
+python3 interest_calculator.py
 ```
 
 ## Examle Usage
