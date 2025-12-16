@@ -1,4 +1,4 @@
-# 💸 pyZAR Interest Calculator
+# 💸 Command Line Interest Calculator
 
 A simple Python script that helps users calculate **simple** or **compound interest** on their investments. It also supports **monthly contributions**, making it useful for savings planning and financial forecasting.
 
@@ -53,7 +53,7 @@ Final Value of Investment: R27656.35
 - Add support for different compounding frequencies (quarterly, daily)
 
 ## Contact
-Feel free to drop any suggestions or bug reports (dylanrose.sa@gmail.com)
+Feel free to drop any suggestions or bug reports (dylan@roses.net.za)
 
 ### Support the project:
 <a href="https://www.zapper.com/payWithZapper/?qr=http%3A%2F%2F2.zap.pe%3Ft%3D6%26i%3D64641%3A82254%3A7%5B34%7C0%2C33n%7CWebsite%20Donation%7C11%7CReference%3A10%5B39%7CZAR%2C38%7CDylans%20Store" target="_blank"><img src="https://www.zapper.com/wp-content/uploads/2023/08/Zapper-Logo.png" alt="Donate Via Zapper" style="height: 60px !important;width: 217px !important;" ></a>
