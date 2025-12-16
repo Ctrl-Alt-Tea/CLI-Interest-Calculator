@@ -1,3 +1,22 @@
+#!/usr/bin/env python3
+
+
+# ──────────────────────────────────────────────
+# Color Definitions
+# ──────────────────────────────────────────────
+COLORS = {
+    "PURPLE": "\033[95m",
+    "CYAN": "\033[96m",
+    "BLUE": "\033[94m",
+    "GREEN": "\033[92m",
+    "YELLOW": "\033[93m",
+    "ORANGE": "\033[33m",
+    "GREY": "\033[90m",
+    "RESET": "\033[0m",
+}
+
+# ──────────────────────────────────────────────
+
 def calculate_simple_interest(principal, annual_rate, years, monthly_contribution=0):
     total_contributions = monthly_contribution * 12 * years
     total_principal = principal + total_contributions
@@ -15,13 +34,13 @@ def calculate_compound_interest(principal, annual_rate, years, monthly_contribut
     return interest, future_value
 
 def main():
-    print("Interest Calculator")
+    print(f"\n{COLORS['GREEN']}Interest Calculator{COLORS['RESET']}")
     print("")
     interest_type = input("Choose interest type (simple [1] or compound [2]): ").strip().lower()
-    principal = float(input("Enter initial deposit amount: R"))
+    principal = float(input("Enter initial deposit amount: $"))
     annual_rate = float(input("Enter annual interest rate (e.g., 6.5 for 6.5%): ")) / 100
     years = int(input("Enter investment duration in years: "))
-    monthly_contribution = float(input("Enter monthly contribution amount (R0 if none): R"))
+    monthly_contribution = float(input("Enter monthly contribution amount ($0 if none): $"))
 
     if interest_type == "1":
         interest, final_value = calculate_simple_interest(principal, annual_rate, years, monthly_contribution)
@@ -33,10 +52,11 @@ def main():
 
 
     print("")
-    print(f"\nResults after {years} years:")
-    print(f"Total Interest Earned: R{interest:.2f}")
-    print(f"Final Value of Investment: R{final_value:.2f}")
+    print(f"\n{COLORS['CYAN']}Results after {years} years:{COLORS['RESET']}")
+    print(f"Total Interest Earned: {COLORS['GREEN']}${interest:.2f}{COLORS['RESET']}")
+    print(f"Final Value of Investment: {COLORS['GREEN']}${final_value:.2f}{COLORS['RESET']}")
     print(" ")
 
+# ──────────────────────────────────────────────
 if __name__ == "__main__":
     main()
