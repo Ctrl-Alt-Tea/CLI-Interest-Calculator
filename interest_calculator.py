@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+# Created by Dylan Rose
+# For further information refer to https://github.com/Ctrl-Alt-Tea/CLI-Interest-Calculator
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------------
 # Color Definitions
-# ──────────────────────────────────────────────
+# ----------------------------------------------------
 COLORS = {
     "PURPLE": "\033[95m",
     "CYAN": "\033[96m",
@@ -15,7 +17,9 @@ COLORS = {
     "RESET": "\033[0m",
 }
 
-# ──────────────────────────────────────────────
+# ---------------------------------------------------
+# Secondary Functions
+# ---------------------------------------------------
 
 def calculate_simple_interest(principal, annual_rate, years, monthly_contribution=0):
     total_contributions = monthly_contribution * 12 * years
@@ -33,6 +37,9 @@ def calculate_compound_interest(principal, annual_rate, years, monthly_contribut
     interest = future_value - (principal + monthly_contribution * months)
     return interest, future_value
 
+# ---------------------------------------------------
+# Main Function
+# ---------------------------------------------------
 def main():
     print(f"\n{COLORS['GREEN']}Interest Calculator{COLORS['RESET']}")
     print("")
@@ -50,13 +57,13 @@ def main():
         print("Invalid interest type selected.")
         return
 
-
+# Script Output
     print("")
     print(f"\n{COLORS['CYAN']}Results after {years} years:{COLORS['RESET']}")
     print(f"Total Interest Earned: {COLORS['GREEN']}${interest:.2f}{COLORS['RESET']}")
     print(f"Final Value of Investment: {COLORS['GREEN']}${final_value:.2f}{COLORS['RESET']}")
     print(" ")
 
-# ──────────────────────────────────────────────
+# ---------------------------------------------------
 if __name__ == "__main__":
     main()
